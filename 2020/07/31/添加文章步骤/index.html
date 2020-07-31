@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>ceshi | Hexo</title>
+  <title>添加文章步骤 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="ceshi">
-<meta property="og:url" content="http://yoursite.com/2020/07/31/ceshi/index.html">
+  <meta name="description" content="1.第一步下拉1git pull 如果报错就使用 1git pull origin master --allow-unrelated-histories #将master分支内容更新到本地(忽略历史) 2.创建新的文章1hexo new 新的文章 实际上就是在blog\source_posts文件夹下面创建了一个md文件文章名称包含空格需要使用双引号 3.编辑文章打开blog\source_pos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="添加文章步骤">
+<meta property="og:url" content="http://yoursite.com/2020/07/31/%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%AD%A5%E9%AA%A4/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.第一步下拉1git pull 如果报错就使用 1git pull origin master --allow-unrelated-histories #将master分支内容更新到本地(忽略历史) 2.创建新的文章1hexo new 新的文章 实际上就是在blog\source_posts文件夹下面创建了一个md文件文章名称包含空格需要使用双引号 3.编辑文章打开blog\source_pos">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-31T09:33:42.000Z">
-<meta property="article:modified_time" content="2020-07-31T09:33:42.517Z">
+<meta property="article:modified_time" content="2020-07-31T10:38:21.368Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -152,19 +154,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-ceshi" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-添加文章步骤" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      ceshi
+      添加文章步骤
     </h1>
   
 
         
-        <a href="/2020/07/31/ceshi/" class="archive-article-date">
+        <a href="/2020/07/31/%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%AD%A5%E9%AA%A4/" class="archive-article-date">
   	<time datetime="2020-07-31T09:33:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-31</time>
 </a>
         
@@ -172,7 +174,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="1-第一步下拉"><a href="#1-第一步下拉" class="headerlink" title="1.第一步下拉"></a>1.第一步下拉</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<p>如果报错就使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master --allow-unrelated-histories #将master分支内容更新到本地(忽略历史)</span><br></pre></td></tr></table></figure>
+<h3 id="2-创建新的文章"><a href="#2-创建新的文章" class="headerlink" title="2.创建新的文章"></a>2.创建新的文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 新的文章</span><br></pre></td></tr></table></figure>
+<p>实际上就是在blog\source_posts文件夹下面创建了一个md文件<br>文章名称包含空格需要使用双引号</p>
+<h3 id="3-编辑文章"><a href="#3-编辑文章" class="headerlink" title="3.编辑文章"></a>3.编辑文章</h3><p>打开blog\source_posts文件夹，使用自己喜欢的Markdowm编辑器进行编辑保存，可以使用在线编辑器作业部落。<br>运行查看</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate #简写hexo g生成静态文件</span><br><span class="line">hexo server #简写hexo s运行</span><br><span class="line">##浏览器访问http:&#x2F;&#x2F;localhost:4000</span><br></pre></td></tr></table></figure>
+<h3 id="4-同步Hexo源文件到远程博客"><a href="#4-同步Hexo源文件到远程博客" class="headerlink" title="4.同步Hexo源文件到远程博客"></a>4.同步Hexo源文件到远程博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add . #不添加被删除的文件,&#96;git add -A&#96;会添加所有修改.</span><br><span class="line">git commit -m &quot;更新描述&quot;</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;github.com&#x2F;huarenshen&#x2F;blog.git</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h3 id="5-部署"><a href="#5-部署" class="headerlink" title="5.部署"></a>5.部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
       
 
       
@@ -251,7 +264,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/31/ceshi/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/31/%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%AD%A5%E9%AA%A4/" alt="微信分享二维码">
     </div>
 </div>
 
